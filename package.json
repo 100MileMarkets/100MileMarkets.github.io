@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "http-server & tailwindcss -i ./src/app.css -o ./dist/app.css --watch",
-    "build": "tailwindcss build -i src/app.css -o dist/app.css"
+    "dev": "http-server -c-1 -p 8080 docs & tailwindcss -i ./src/app.css -o ./docs/dist/app.css --watch",
+    "build": "tailwindcss build -i ./src/app.css -o ./docs/dist/app.css"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
